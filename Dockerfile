@@ -1,7 +1,7 @@
-FROM gliderlabs/alpine:3.3
-MAINTAINER Bruno Celeste <bruno@coconut.co>
+FROM alpine:3
+MAINTAINER Andre Staffe andre@plmvi.de
 
-ENV FFMPEG_VERSION=3.0.2
+ENV FFMPEG_VERSION=4.4
 
 WORKDIR /tmp/ffmpeg
 
