@@ -14,7 +14,7 @@ RUN apk add --update build-base curl nasm tar bzip2 \
   cd ffmpeg-${FFMPEG_VERSION} && \
   ./configure \
   --enable-version3 --enable-gpl --enable-nonfree --enable-libfdk-aac --enable-small --enable-libmp3lame --enable-libx264 --enable-libx265 --enable-libvpx --enable-libtheora --enable-libvorbis --enable-libopus --enable-libass --enable-libwebp --enable-librtmp --enable-postproc --enable-avresample --enable-libfreetype --enable-openssl --disable-debug --enable-vaapi --enable-libmfx && \
-  make && \
+  make –j 8 && \
   make install && \
   make distclean && \
 
