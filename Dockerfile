@@ -6,7 +6,7 @@ ENV FFMPEG_VERSION=4.4
 WORKDIR /tmp/ffmpeg
 
 RUN apk add --update build-base curl nasm tar bzip2 \
-  zlib-dev openssl-dev yasm-dev lame-dev libogg-dev x264-dev libvpx-dev libvorbis-dev x265-dev freetype-dev libass-dev libwebp-dev rtmpdump-dev libtheora-dev opus-dev libva-dev fdk-aac-dev intel-media-driver && \
+  zlib-dev openssl-dev yasm-dev lame-dev libogg-dev x264-dev libvpx-dev libvorbis-dev x265-dev freetype-dev libass-dev libwebp-dev rtmpdump-dev libtheora-dev opus-dev libva-dev fdk-aac-dev && \
 
   DIR=$(mktemp -d) && cd ${DIR} && \
 
